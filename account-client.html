@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Creer un compte</title>
+    <title>NoisyVideoleo</title>
     <!--============== REMIX ICONS================-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!--============== SWIPER CSS================-->
@@ -98,53 +98,38 @@
 </header>
 
 <main>
-    <section class="form__card flex">
-        <h4 class="form__card-title">Bienvenue sur Cameo</h4>
-        <p>
-            Réserve des dédicaces vidéo personnalisées réalisées par tes célébrités préférées.        </p>
-        <button class="facebook-login__button flex">
-            <i class="ri-facebook-fill"></i>
-            <span>Se Connecter Avec Facebook</span>
-        </button>
-
-        <div class="form-divider flex">
-            <div class="form_divider-item"></div>
-            <div class="form_divider-item-text">Ou continuer avec l’adresse e-mail</div>
-            <div class="form_divider-item"></div>
+    <section class="form__card">
+        <h4 class="form__card-title">Tes demandes de video</h4>
+        <div class="client-request-status-list mt-1 flex">
+            <button class="client-request-status-list-item client-request-status-list-item-active ">
+                Tous
+            </button>
+            <button class="client-request-status-list-item">
+                Réalisés
+            </button>
+            <button class="client-request-status-list-item">
+                En cours
+            </button>
+            <button class="client-request-status-list-item">
+                Déclinés
+            </button>
+            <button class="client-request-status-list-item">
+                Expirés
+            </button>
         </div>
-        <form action="" class="form__login">
-            <div class="form__group">
-                <label >Nom complet</label>
-                <input type="texte" placeholder="Email">
+        <div class="client-request-content flex mt-1">
+            <div class="client-request-item flex card">
+<!--                <img src="assets/img/1.jpg"  width="80" height="80" alt="">-->
+<!--                <div class="client-request-item-content flex">-->
+<!--                    <h4 class="client-request-item-content-title">Titre de la video</h4>-->
+
+<!--                </div>-->
+
             </div>
-            <div class="form__group">
-                <label >Anniversaire</label>
-                <input type="date" placeholder="Email">
-            </div>
-            <div class="form__group">
-                <label >Email</label>
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="form__group">
-                <label >Mot de Passe</label>
-                <input type="password" placeholder="Mot de Passe">
-            </div>
-            <div class="form__group">
-                <label >Code d’invitation (facultatif)</label>
-                <input type="text" placeholder="Mot de Passe">
-            </div>
-            <div class="form__group">
-                <a href="index.html" class="form__button">Créer un compte</a>
-            </div>
-            <div class="">
-                <input type="checkbox">
-                <label for="">Tenez-moi au courant des offres exclusives de Cameo, des mises à jour et d’autres actus ! Tu peux te désinscrire à tout moment.</label>
-            </div>
-            <div class="">
-                <a href="login.html" class="forgot__password">Tu as déjà un compte ? Connecte-toi</a>
-            </div>
-        </form>
+        </div>
+
     </section>
+
 </main>
 <!--FOOTER -->
 <footer class="">
