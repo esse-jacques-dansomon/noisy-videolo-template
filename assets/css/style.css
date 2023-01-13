@@ -4,7 +4,7 @@
 
 /*============VARIABLES CSS*==================*/
 :root {
-    --header-height: 3rem;
+    --header-height: 4rem;
     /*======COLORS=========*/
     /* Change favorite color to match images */
     /* Green dark 190 - Green 171 Green Blue 200*/
@@ -59,6 +59,26 @@
 
 }
 
+/*=================SCROLLBAR CSS================*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 @media screen and (min-width: 968px) {
     :root {
@@ -83,11 +103,13 @@ html{
 }
 
 body{
-    margin: var(--header-height) 0 0 0;
+    margin:var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    overflow-x: hidden;
+
 }
 
 h1, h2, h3{
@@ -113,11 +135,15 @@ video{
     justify-content: center;
     align-items: center;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 .flex-c-s{
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: start;
+
 }
 .flex-column{
     flex-direction: column;
@@ -162,9 +188,6 @@ button{ cursor: pointer}
 
 input{outline: none}
 
-.main{
-    overflow-x: hidden; // for animation gsap
-}
 
 /*=================VARIABLE DARK THEME================*/
 body.dark-theme{
@@ -252,6 +275,7 @@ header{
     transition: .3s;
     background-color: white;
     z-index: var(--z-fixed);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav__list{
@@ -338,6 +362,12 @@ header{
     border-radius: 50px;
     width: 10rem;
     column-gap: .5rem;
+}
+.user__account--text{
+    cursor: pointer;
+}
+.user__account--text > p > a{
+    color: white;
 }
 @media (max-width: 560px){
     .logo{
@@ -757,7 +787,7 @@ header{
 footer{
     margin-top: 2rem;
     padding: 2rem 0 ;
-    background: rgb(162, 160, 160);
+    background: var(--first-color-color-alt);
     color: white;
 }
 .subscribe__inner-form{
@@ -954,6 +984,9 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
+
+
 
 .form__card-title{
     font-size: 1.2rem;
@@ -1213,7 +1246,7 @@ input[type="checkbox"]{
     align-items: start;
 }
 .search__filter-content-filters-btns{
-display: none;
+    display: none;
 }
 .hide{
     display: none;
@@ -1275,7 +1308,7 @@ display: none;
 }
 
 .search__filter-content-filters-btns > .filter-btn{
-   padding: .5rem 1rem;
+    padding: .5rem 1rem;
     border: 1px solid var(--first-color);
     border-radius: 30px;
 }
@@ -1432,6 +1465,60 @@ display: none;
 
 
 }
+/*=======ACCOUNT */
+.client-request-item{
+    display: flex;
+    max-width: 250px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 1rem;
+    border: 1px solid #ccc;
+
+}
+.client-request-content{
+    margin: 1rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.client-request-item > .author > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.client-request-item > .author > .author-info{
+    text-align: start;
+}
+.client-request-item__content__author__titre{
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+
+}
+
+.client-request-item__info{
+    margin-top: 1rem;
+    text-align: start;
+}
+
+.client-request-item-button{
+
+    background-color: var(--first-color);
+    color: white;
+    font-weight: bold;
+    padding: .6rem 1.1rem;
+    border: none;
+    cursor: pointer;
+    margin-top:  1rem;
+    border-radius: 50px;
+}
+
 @media screen and (max-width:1054px ) and (min-width:950px){
 
     .menu_items > li{
@@ -1481,7 +1568,144 @@ display: none;
     }
 
 }
+main{
+    margin-top: 5rem;
+}
 
 /*=========START NAVBAR==========*/
 
 /*=========END NAVBAR==========*/
+
+.btn{
+    background-color: var(--first-color);
+    color: white;
+    font-weight: bold;
+    padding: .6rem 1.1rem;
+    border: none;
+    cursor: pointer;
+    margin-top:  1rem;
+    border-radius: 50px;
+}
+
+.request-details-card{
+    max-width: 1000px;
+    /*box-shadow: 0 0 10px rgba(0,0,0,.1);*/
+    /*background-color: #ffffff;*/
+    margin: 4rem auto;
+    padding: 2rem 1rem;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr ;
+    column-gap: 10px;
+}
+.request-details-card > div{
+    border: 1px solid #ccc;
+    padding: 2rem 1rem;
+
+}
+
+@media screen and (min-width: 600px) {
+    .request-details-card{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.w-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+.mt-4{
+    margin-top: 3rem;
+}
+
+
+.about-us-page{
+}
+
+
+.about-us{
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 2rem 1.5rem;
+}
+
+.about-us-video > video{
+    margin-top: 2rem;
+    border: 7px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+}
+
+.about-us-text >h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.about-us-banner{
+    background-color: #000000;
+    padding: 2rem 1rem;
+    text-align: start;
+    margin-top: 2rem;
+    color: white !important;
+}
+
+.about-us-pub-content > span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.about-us-pub-content-item-li{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.about-us-pub-content-item-li  > i{
+    font-size: 1rem;
+    color: var(--first-color);
+    margin-right: 1rem;
+}
+@media screen and (min-width: 667px) {
+    .about-us-text >h1{
+        font-size: 2.5rem;
+    }
+    .about-us-how-it-works-element, .about-us-pub{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-us-how-it-works-element:nth-child(3) > img{
+        order: 2;
+    }
+
+    .about-us-how-it-works-content--text > h2{
+        font-size: 2rem;
+    }
+    .about-us-video{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us-video > video{
+        order: 2;
+    }
+
+    .about-us-banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

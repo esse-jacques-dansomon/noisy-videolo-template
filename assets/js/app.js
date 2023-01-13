@@ -2,16 +2,16 @@ window.onload = function() {
     /*=================SWIPER INITIALISE======================*/
     const  breakpoints = {
         200:  {
-            slidesPerView: 2.1,
+            slidesPerView: 1,
             spaceBetween: 5,
 
         },
-        400:  {
-            slidesPerView: 2.5,
+        350:  {
+            slidesPerView: 2,
 
         },
         500:  {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
         },
         640: {
             slidesPerView: 3.2,

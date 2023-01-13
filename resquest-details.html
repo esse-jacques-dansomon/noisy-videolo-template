@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body >
 <header   >
   <nav class="navBar flex">
     <div id="nav__toggle">
@@ -22,14 +22,16 @@
     <div class="flex nav__list ">
       <ul class="menu_items flex-c-s">
         <li class="nav__item has-submenu ">
-          <a class="nav__link nav_link_icon " href="#">
-            Categories
+          <div class="flex nav_link_icon">
+            <a class="nav__link "  href="#">
+              Categories
+            </a>
             <i class="ri-arrow-right-s-line"></i>
-          </a>
+          </div>
+
           <ul class="sub-menu">
             <li class="sub-menu__item">
               <a href="">Action</a>
-
             </li>
             <li class="sub-menu__item">
               <a href="">Adventure</a>
@@ -90,74 +92,77 @@
       <div class="user__account--icon flex">
         <i class="ri-user-line"></i>
       </div>
-      <div class="user__account--text flex">
-        <p>Se connecter</p>
+      <div class="user__account--text cursor-pointer flex">
+        <p>
+          <a href="account-client.html">Se connecter</a>
+        </p>
       </div>
     </div>
   </nav>
 </header>
-<main>
-  <section class="faq">
-  <h3>Questions Fréquentes</h3>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 1</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-      <div class="faq-item-divider mt-1">  </div>
+<section class="request-details-card flex-c-s ">
+  <div class="">
+    <h5 class="form__card-title">Details de la demande</h5>
+    <div class="flex-c-s mt-1">
+      <p>Talend demandé</p>
+      <h4>Jacques</h4>
     </div>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 2</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-      <div class="faq-item-divider mt-1">  </div>
-    </div>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 3</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-      <div class="faq-item-divider mt-1">  </div>
-    </div>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 4</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-      <div class="faq-item-divider mt-1">  </div>
-    </div>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 5</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-      <div class="faq-item-divider mt-1">  </div>
-    </div>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 6</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-      <div class="faq-item-divider mt-1">  </div>
-    </div>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 7</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-      <div class="faq-item-divider mt-1">  </div>
-    </div>
-    <div class="faq-item">
-      <h4 class="faq-item-question mt-1">Question no 8</h4>
-      <div class="faq-item-response">
-        Vidoleo permet aux fans de réserver une vidéo personnalisée de leurs célébrités préférées. Notre mission est de créer un moment unique et authentique avec une célébrité.
-      </div>
-    </div>
-  </section>
-</main>
 
-<!--FOOTER -->
+    <div class="flex-c-s mt-1">
+      <p>Video pour</p>
+      <h4>Moi</h4>
+    </div>
+
+    <div class="flex-c-s mt-1">
+      <p>Demandé par </p>
+      <h4>Moi </h4>
+    </div>
+    <div class="flex-c-s mt-1">
+      <p>Options </p>
+      <h4>Pas de logo </h4>
+      <h4>Pas dans la liste des video </h4>
+    </div>
+    <div class="flex-c-s mt-1">
+      <h4>Instruction </h4>
+      <p class="flex-c-s ">lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi atque autem consectetur consequuntur cumque cupiditate delectus deleniti dolor doloremque dolorum ea eius enim eos est et eum ex excepturi expedita explicabo facilis fuga fugiat hic id illum impedit in incidunt inventore ipsa ipsum
+      </p>
+    </div>
+  </div>
+  <div class="">
+    <h6 class="form__card-title">Paiement</h6>
+    <div class="flex-c-s mt-1">
+      <p>Total</p>
+      <h4>20000 FCFA</h4>
+    </div>
+
+    <div class="flex-c-s mt-1">
+      <p>Etat payment</p>
+      <h4>Non payé</h4>
+    </div>
+
+    <div class="flex-c-s mt-1">
+      <p>Moyen de paiement </p>
+      <h4>Wave </h4>
+    </div>
+
+    <div class="flex-c-s mt-1">
+      <p>Moyen de paiement disponible</p>
+      <h4>Wave, orange money, CB </h4>
+    </div>
+
+    <div class="flex-c-s mt-1">
+      <h4>Actions </h4>
+        <div class="flex ">
+            <button class="btn btn--primary">Payer</button>
+            <button class="btn btn--primary">Annuler</button>
+        </div>
+    </div>
+
+  </div>
+
+
+</section>
+
 <footer class="">
   <div class="footer-group-1  container grid">
     <div class="subscribe">
@@ -224,6 +229,7 @@
 
 
 </footer>
+
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header   >
+<header>
     <nav class="navBar flex">
         <div id="nav__toggle">
             <i id="nav__toggle-icon" class="ri-menu-2-line"></i>
@@ -97,38 +97,244 @@
     </nav>
 </header>
 
-<main>
-    <section class="form__card">
-        <h4 class="form__card-title">Tes demandes de video</h4>
-        <div class="client-request-status-list mt-1 flex">
-            <button class="client-request-status-list-item client-request-status-list-item-active ">
-                Tous
-            </button>
-            <button class="client-request-status-list-item">
-                Réalisés
-            </button>
-            <button class="client-request-status-list-item">
-                En cours
-            </button>
-            <button class="client-request-status-list-item">
-                Déclinés
-            </button>
-            <button class="client-request-status-list-item">
-                Expirés
-            </button>
+<main >
+    <section class="container">
+        <div class="form__card">
+            <h4 class="form__card-title">Tes demandes de video</h4>
+            <div class="client-request-status-list mt-1 flex">
+                <button class="client-request-status-list-item client-request-status-list-item-active ">
+                    Tous
+                </button>
+                <button class="client-request-status-list-item">
+                    Réalisés
+                </button>
+                <button class="client-request-status-list-item">
+                    En cours
+                </button>
+                <button class="client-request-status-list-item">
+                    Déclinés
+                </button>
+                <button class="client-request-status-list-item">
+                    Expirés
+                </button>
+            </div>
         </div>
-        <div class="client-request-content flex mt-1">
-            <div class="client-request-item flex card">
-<!--                <img src="assets/img/1.jpg"  width="80" height="80" alt="">-->
-<!--                <div class="client-request-item-content flex">-->
-<!--                    <h4 class="client-request-item-content-title">Titre de la video</h4>-->
 
-<!--                </div>-->
+        <div class="client-request-content container grid mt-1">
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <a href="resquest-details.html" class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </a>
+
+                </div>
+
+
+            </div>
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <button class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </button>
+
+                </div>
+
+
+            </div>
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <button class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </button>
+
+                </div>
+
+
+            </div>
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <button class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </button>
+
+                </div>
+
+
+            </div>
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <button class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </button>
+
+                </div>
+
+
+            </div>
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <button class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </button>
+
+                </div>
+
+
+            </div>
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <button class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </button>
+
+                </div>
+
+
+            </div>
+            <div class="client-request-item flex-c-s card">
+                <div class="author flex">
+                    <img width="50px" src="assets/img/1.jpg" alt="">
+                    <dvi class="author-info flex-c-s">
+                        <h3 class="client-request-item__content__author__name">NoisyDeo</h3>
+                        <p class="client-request-item__content__author__titre">Acteurs dans les in</p>
+                    </dvi>
+                </div>
+                <div class="client-request-item__info">
+                    <div class="client-request-item__info__content">
+                        <h4 class="client-request-item__info__content__title">En Cours</h4>
+                        <p class="client-request-item__info__content__description">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Adipisci, quae.</p>
+                    </div>
+                    <div class="client-request-item__info__status">
+                        <p class="client-request-item__info__status__text">En cours</p>
+                    </div>
+                    <button class="client-request-item-button flex">
+                        <i class="ri-arrow-right-s-line"></i>
+                        Details
+                    </button>
+
+                </div>
+
 
             </div>
         </div>
 
     </section>
+
+
+
 
 </main>
 <!--FOOTER -->
@@ -137,8 +343,9 @@
         <div class="subscribe">
             <div class="subscribe__inner">
                 <div class="subscribe__inner-title">
-                    <h4 >Subscribe to our newsletter</h4>
-                    <p class="mt-0-5">Soyez les premiers à être informés des nouvelles stars et des meilleures offres sur Cameo
+                    <h4>Subscribe to our newsletter</h4>
+                    <p class="mt-0-5">Soyez les premiers à être informés des nouvelles stars et des meilleures offres
+                        sur Cameo
                     </p>
                 </div>
                 <div class="subscribe__inner-form">
@@ -181,7 +388,8 @@
     <div class="footer-group-2 container">
         <div class="footer-tem-3 ">
             <div class="footer_item_3-info mt-1">
-                Pour toutes autres informations contacte-nous : <a href="hello@vidoleo.com">hello@vidoleo.com</a>
+                Pour toutes autres informations contactez-nous : <a
+                    href="mailto:hello@vidoleo.com">hello@vidoleo.com</a>
             </div>
             <div class="footer_item_3-pages flex">
                 <a href="faq.html">Faq</a>
